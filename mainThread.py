@@ -26,4 +26,4 @@ class MainThread():
 
             for x in self.actions:
                 x[0](*x[1])
-        
+                  

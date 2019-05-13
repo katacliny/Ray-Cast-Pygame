@@ -8,3 +8,4 @@ class Boundary():
 
     def show(self, Surface, color):
         py.draw.aaline(Surface, color, [self.a.x, self.a.y], [self.b.x, self.b.y], True)
+        

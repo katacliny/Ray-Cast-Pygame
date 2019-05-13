@@ -8,3 +8,4 @@ class Ray():
 
     def show(self, Surface, color):
         py.draw.aaline(Surface, color, [self.pos.x, self.pos.y], [self.pos.x + 10, self.pos.y], True)
+        
