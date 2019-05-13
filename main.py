@@ -9,8 +9,6 @@ import colors
 from mainThread import MainThread
 from threading import Thread
 
-queue = []
-
 def initialitation(caption):
     py.init()
     py.display.set_caption(caption)
