@@ -1,5 +1,6 @@
 import pygame as py
 import asyncio
+import colors
 
 class MainThread():
 
@@ -7,6 +8,7 @@ class MainThread():
         self.actions = actions
         self.running = 1
         self.py = py
+        
     
     def startStopRunning(self):
         self.running = not self.running
@@ -23,7 +25,6 @@ class MainThread():
                 if evento.type == self.py.QUIT:
                     self.startStopRunning
                     self.py.quit()
-
             for x in self.actions:
                 x[0](*x[1])
                   
