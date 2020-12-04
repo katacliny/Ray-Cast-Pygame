@@ -26,5 +26,5 @@ class DataBaseHandle():
 
     @staticmethod
     def __conn__():
-        return DataBaseHandle.conn if DataBaseHandle.conn != 0  else DataBaseHandle.instantiate()
+        pass
         

@@ -49,7 +49,7 @@ def makeMap():
         conty = 0
         for y in map:
                 for x in y:
-                        if x is 1:
+                        if x == 1:
                                 map[conty][contx] = Block(45 * contx, 45 * conty)
                         
                         contx += 1
@@ -61,7 +61,7 @@ def recorrer():
         ground = []
         for x in map:
                 for y in x:
-                        if y is not 0:
+                        if y != 0:
                                 for m in y.walls:
                                         ground.append(m)
 
